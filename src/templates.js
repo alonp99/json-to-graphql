@@ -13,12 +13,10 @@ const {
 
 ${types.join('\n')}
 
-module.exports = new GraphQLSchema({
-  query: new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: () => ({${fields}})
   })
-})
 `
 
 const queryTemplateWithArgs = (
