@@ -8,7 +8,8 @@ const {
   GraphQLObjectType,
   GraphQLSchema,
   GraphQLID,
-  GraphQLNonNull
+  GraphQLNonNull,
+  GraphQLList
 } = require('graphql')
 
 ${types.join('\n')}
