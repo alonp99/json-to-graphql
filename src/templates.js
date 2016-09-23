@@ -44,10 +44,7 @@ const scalarTypeTemplate = (name, type) => {
   return `
     ${name}: {
       description: 'enter your description',
-      type: ${type},
-      // TODO: Implement resolver for ${name}
-      resolve: () => null,
-    }
+      type: ${type}
   `
 }
 
